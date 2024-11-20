@@ -1,10 +1,6 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>Angelito Cerámicas</title>
-<meta name="title" content="Angelito Cerámicas" />
-<meta name="description" content="Sitio web de portafolio especializado en cerámica artística realizada por mí, que funcione como una plataforma visual y de información completa. El sitio permitirá al usuario explorar colecciones de obras anteriores, organizadas por temas o épocas, y contará con una sección de blog donde se compartan los procesos creativos y técnicas de producción, fomentando un acercamiento educativo y creativo al arte cerámico. Además, incluirá un sistema de contacto accesible y directo para recibir encargos personalizados, facilitando así la conexión entre el artista y clientes interesados en piezas únicas." />
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Angelito Cerámicas" />
@@ -24,65 +20,36 @@
 
     <title>Angelito Cerámicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #fff;
-            text-align: center;
-            background-color: #343a40;
-        }
-        .cover-container {
-            max-width: 42em;
-        }
-        .masthead {
-            margin-bottom: auto;
-        }
-        .masthead .nav-link {
-            color: rgba(255, 255, 255, 0.85);
-            font-weight: bold;
-        }
-        .masthead .nav-link:hover {
-            color: #fff;
-        }
-        .cover-heading {
-            font-size: 2.5rem;
-        }
-        footer {
-            margin-top: auto;
-            color: rgba(255, 255, 255, 0.85);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo CSS externo -->
 </head>
 <body>
     <!-- Barra de navegación -->
-    <header class="masthead mb-auto d-flex justify-content-center">
-        <nav>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+     <nav class="navbar">
+        <div class="navbar-brand">
+            Angelito Cerámicas
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#Ceramicas">Cerámicas</a></li>
+            <li><a href="#contacto">Contacto y Comisiones</a></li>
+            <li><a href="#sobre mí">Sobre mí</a></li>
+    </nav>
 
     <!-- Contenido principal -->
     <div class="cover-container">
         <main class="px-3">
-            <h1 class="cover-heading">Bienvenido a mi portafolio</h1>
-            <p class="lead">Descubre mis colecciones de cerámica hechas a mano, explora mi blog sobre el proceso creativo, y contáctame para encargos personalizados.</p>
+            <h1 class="cover-heading">¡HOLA!</h1>
+            <p class="lead">Aquí podrás encontrar mis trabajos anteriores a partir en cerámica, como también mis datos de contacto y comisiones</p>
             <p class="lead">
-                <a href="#colecciones" class="btn btn-lg btn-primary">Ver Colecciones</a>
+                <button class="btn-colecciones">Ver Colecciones</button>
             </p>
         </main>
 
         <footer class="mt-auto">
-            <p>Hecho con ❤️ por <a href="#">[Tu Nombre]</a>.</p>
+            <p>Cerámica Gres torneada, construida y esmaltada por <a href="https://www.linkedin.com/in/angela-fern%C3%A1ndez-allendes-184a99248/" target="blank"> Angela Fernández</a>.</p>
         </footer>
     </div>
 </body>
 </html>
+
 
