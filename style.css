@@ -4,6 +4,7 @@ html, body {
     overflow-y: auto; /* Activa el scroll dentro de ese contenedor */
     margin: 0;
     padding: 0;
+    padding-top: 30px;
     height: auto; /* Deja que la altura sea flexible */
     min-height: 100vh; /* Asegura que la página ocupe al menos el 100% de la pantalla */
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
@@ -19,7 +20,8 @@ body {
     text-align: center;
     position: relative;
     z-index: 1;
-    padding: 0 20px; /* Añadir un poco de padding para no pegar el contenido a los bordes */
+    padding: 20px; /* Añadir un poco de padding para no pegar el contenido a los bordes */
+    padding-top: 150px;
     min-height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
 }
 
@@ -108,7 +110,7 @@ footer a:hover {
     background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con algo de transparencia */
      padding: 10px 20px;
     width: 100%;
-    height: 10%;
+    height: auto;
     max-height: 150px;
     position: absolute; /* Fija la barra en la parte superior */
     top: 0;
