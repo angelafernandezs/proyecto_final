@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+@media (max-width: 768px)
 html, body {
     overflow-y: auto; /* Activa el scroll dentro de ese contenedor */
     margin: 0;
