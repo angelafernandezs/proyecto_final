@@ -23,33 +23,64 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div class="navbar-brand"> Angelito Cerámicas</div>
-        <ul class="navbar-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="page-1.html">Cerámicas</a></li>
-            <li><a href="page-3.html">Sobre mí</a></li>
-            <li><a href="page-2.html">Contacto y Comisiones</a></li>
-    </nav>
-    <section id="about">
-    <div class="about-container">
-        <div class="about-text">
-            <h1 class="animate-fade-in">Sobre mí</h1>
-            <p class="animate-fade-in">Tengo 23 años, soy Licenciada en Diseño y realizo Cerámica hace casi ya dos años. Comencé explorando las técnicas básicas de modelado manual, para luego llegar a realizar piezas en torno eléctrico. Hoy en día, he llevado mi trabajo más allá y combinandolo con la disciplina del diseño, haciendo que mis piezas se encuentren premeditadas y diseñadas antes de tornear, junto con ello, incorporo procesos de diseño como el prototipado, junto con la iteración, para así obtener piezas profesionales y de alto oficio y calidad.</p>
+     <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Angelito Cerámicas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-1.html">Cerámicas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="page-3.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-2.html">Contacto y Comisiones</a>
+                </li>
+            </ul>
         </div>
-        <div class="about-image animate-fade-in">
-            <img src="https://angelitoceramicas.cl/linkedin.jpeg" alt="Angelito trabajando en cerámica">
+    </div>
+</nav>
+
+  <section id="about">
+    <div class="container">
+        <div class="row justify-content-center"> <!-- Centra todo el contenido dentro de la fila -->
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0 about-text">
+                <h1 class="animate-fade-in" data-aos="fade-up" data-aos-duration="2000">Sobre mí</h1>
+                <p class="fs-5" class="animate-fade-in" data-aos="fade-up" data-aos-duration="2000">Tengo 23 años, soy Licenciada en Diseño y realizo Cerámica hace casi ya dos años. Comencé explorando las técnicas básicas de modelado manual, para luego llegar a realizar piezas en torno eléctrico. Hoy en día, he llevado mi trabajo más allá y combinándolo con la disciplina del diseño, haciendo que mis piezas se encuentren premeditadas y diseñadas antes de tornear, junto con ello, incorporo procesos de diseño como el prototipado, junto con la iteración, para así obtener piezas profesionales y de alto oficio y calidad.</p>
+            </div>
+            <!-- Esta columna será la de la imagen -->
+            <div class="col-lg-6 col-12 mb-4 mb-lg-0 about-image d-flex justify-content-center" class="animate-fade-in" data-aos="fade-up" data-aos-duration="2000">
+                <img src="https://angelitoceramicas.cl/linkedin.jpeg" alt="Angelito trabajando en cerámica" class="img-fluid rounded shadow-lg" style="max-width: 80%; max-height: 500px;">
+            </div>
         </div>
     </div>
 </section>
+
+
+
+
+
 <footer class="mt-auto">
         <p class="animate-fade-in">&copy; Cerámica Gres torneada, construida y esmaltada por 
             <a href="https://www.linkedin.com/in/angela-fern%C3%A1ndez-allendes-184a99248/" target="_blank">Angela Fernández</a>.
         </p>
     </footer>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
