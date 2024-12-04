@@ -23,26 +23,49 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
     
 
 
 </head>
 <body>
-    <!-- Barra de navegación -->
-   <nav class="navbar">
-        <div class="navbar-brand"> Angelito Cerámicas</div>
-        <ul class="navbar-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="page-1.html">Cerámicas</a></li>
-            <li><a href="page-3.html">Sobre mí</a></li>
-            <li><a href="page-2.html">Contacto y Comisiones</a></li>
-    </nav>
+   <!-- Barra de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Angelito Cerámicas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-1.html">Cerámicas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page-3.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="page-2.html">Contacto y Comisiones</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
     <div class="cover-container" style="margin-top: 100px;">
         <main class="content px-3">
-            <h1 class="cover-heading animate-fade-in center-text">¡Trabajemos Juntos!</h1>
-            <p class="lead animate-fade-in center-text">Envíame un primer correo de contacto para que comencemos a materializar tu idea poco a poco :)</p>
-    <div class="contact-form animate-fade-in">
+            <h1 class="cover-heading animate-fade-in center-text" class="animate-fade-in" data-aos="fade-up" data-aos-duration="2000">¡Trabajemos Juntos!</h1>
+            <p class="lead animate-fade-in center-text" class="animate-fade-in" data-aos="fade-up" data-aos-duration="2000">Envíame un primer correo de contacto para que comencemos a materializar tu idea poco a poco :)</p>
+    <div class="container d-flex justify-content-center align-items-center">
+    <div class="contact-form animate-fade-in" class="animate-fade-in" data-aos="fade-up" data-aos-duration="2000">
         <h2>Contáctame</h2>
         <form action="https://formspree.io/f/xanyppdq" method="POST">
             <label for="name">Nombre</label>
@@ -57,6 +80,7 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
+</div>
     <div class="contact-other">
         <h2 class="cover-heading mt-5 center-text">Otros medios de Contacto</h2>
         <p class="lead center-text">¡Puedes contactarme por mis redes sociales también!</p>
@@ -81,5 +105,9 @@
             <a href="https://www.linkedin.com/in/angela-fern%C3%A1ndez-allendes-184a99248/" target="_blank">Angela Fernández</a>.
         </p>
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
