@@ -1,43 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
-@media (max-width: 768px)
+
+/* Estilos generales */
 html, body {
-    overflow-y: auto; /* Activa el scroll dentro de ese contenedor */
     margin: 0;
     padding: 0;
-    padding-top: 30px;
-    height: auto; /* Deja que la altura sea flexible */
-    min-height: 100vh; /* Asegura que la página ocupe al menos el 100% de la pantalla */
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
 }
 
 body {
     font-family: 'Space Grotesk', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Asegura que el contenido principal esté en la parte superior */
-    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: flex-start;
+    align-items: center;
     color: #fff;
     text-align: center;
     position: relative;
     z-index: 1;
-    padding: 20px; /* Añadir un poco de padding para no pegar el contenido a los bordes */
+    padding: 20px;
     padding-top: 150px;
-    min-height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
+    min-height: 100vh;
 }
 
+/* Fondo */
 body::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Asegura que cubra todo el contenido */
+    height: 100%;
     background-image: url('https://angelitoceramicas.cl/background.jpg');
     background-size: cover;
     background-position: center;
     z-index: -2;
-    background-attachment: scroll; /* Mantiene la imagen fija */
+    background-attachment: scroll;
 }
 
 body::after {
@@ -47,73 +47,28 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Capa oscura con opacidad */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
 
-
-
+/* Contenedor principal */
 .cover-container {
     max-width: 42em;
     z-index: 2;
-    margin-top: 150px; /* Ajuste para separar el contenido del navbar */
-    margin-bottom: auto; 
+    margin-top: 150px;
+    margin-bottom: auto;
     height: auto;
 }
 
-.masthead .nav-link {
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: bold;
-}
-
-.masthead .nav-link:hover {
-    color: #fff;
-}
-
-.cover-heading {
-    font-size: 2.5rem;
-}
-
-main {
-    margin-top: 20px; /* Añadir un margen superior para separar del navbar */
-}
-
-h1, p {
-    margin-top: 20px; /* Puedes ajustar este valor según lo necesites */
-}
-
-
-footer {
-    color: rgba(255, 255, 255, 0.85);
-    padding: 1rem;
-    z-index: 2;
-    width: 100%; /* Hace que el footer ocupe todo el ancho */
-    display: flex;
-    justify-content: center; /* Centra el texto del footer */
-    align-items: center; /* Centra el texto verticalmente */
-    position: relative;
-    bottom: 0; /* Asegura que el footer esté en la parte inferior */
-}
-
-footer a {
-    color: #fff; /* Cambia el color del texto a blanco */
-    text-decoration: underline; /* Agrega el subrayado al enlace */
-}
-
-footer a:hover {
-    color: #d1d1d1; /* Cambia el color del enlace cuando pasa el cursor por encima */
-}
-
+/* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Separar los elementos a la izquierda y derecha */
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con algo de transparencia */
-     padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
     width: 100%;
-    height: auto;
-    max-height: 150px;
-    position: absolute; /* Fija la barra en la parte superior */
+    position: absolute;
     top: 0;
     z-index: 10;
 }
@@ -127,7 +82,7 @@ footer a:hover {
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 2rem; /* Espacio entre los elementos del menú */
+    gap: 2rem;
     margin: 0;
 }
 
@@ -143,37 +98,64 @@ footer a:hover {
 }
 
 .navbar-links a:hover {
-    color: #d1d1d1; /* Color más claro en hover */
-    text-decoration: underline; /* Añadir subrayado en hover */
+    color: #d1d1d1;
+    text-decoration: underline;
 }
 
-/* Asegúrate de que el contenido no se superponga con la barra */
-body {
-    padding-top: 70px; /* Ajusta según el tamaño de la barra */
+/* Ajustes de texto y contenido */
+.cover-heading {
+    font-size: 2.5rem;
 }
-/* Botón Ver Colecciones */
+
+h1, p {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #d1d1d1;
+}
+
+/* Botón de colecciones */
 .btn-colecciones {
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo del mismo color que el navbar */
-    color: #fff; /* Texto blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Tamaño del botón */
-    font-size: 1rem; /* Tamaño de la fuente */
-    font-weight: 500; /* Peso de la fuente */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición para el hover */
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-colecciones:hover {
-    background-color: rgba(0, 0, 0, 0.6); /* Cambio a un color más oscuro al pasar el mouse */
-    text-decoration: none; /* Eliminar subrayado */
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
 }
 
+/* Sección de imágenes */
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     padding: 2rem 0;
-    margin-top: 20px; /* Para que no se superponga con el navbar */
 }
 
 .image-card {
@@ -217,161 +199,71 @@ body {
     opacity: 1;
 }
 
-/* Estilos para el efecto del texto */
-        .text-effect {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-
-        .text-effect.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-
-
-        /* Botón personalizado */
-        .btn-colecciones {
-            background-color: primary;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            transition: background-color 0.3s ease;
-            margin-top: 10px; /* Añadir un margen en la parte superior del botón */
-        }
-
-        .btn-colecciones:hover {
-            background-color: primary;
-        }
-.btn-delay {
-    animation-delay: 2s; /* Retraso de medio segundo */
+/* Sección de contacto */
+.contact-form {
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px; /* Ajusta el tamaño máximo */
+    width: 100%; /* Asegura que el formulario ocupe el 100% del espacio disponible hasta el tamaño máximo */
+    margin: auto; /* Asegura que el formulario se centre horizontalmente */
 }
 
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: whitesmoke;
+    text-align: center; /* Centra el título */
 }
 
-.animate-fade-in {
-    animation: fade-in 2s ease-in-out forwards;
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: whitesmoke; /* Ajuste de color */
 }
 
-.cover-heading {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.lead {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+.contact-form textarea {
+    resize: none;
+    height: 100px;
 }
 
-/* Asegura que el contenido de las dos columnas se alinee correctamente */
+.contact-form button {
+    background-color: #333;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Hace que el botón ocupe todo el ancho del formulario */
+}
+
+.contact-form button:hover {
+    background-color: #555; /* Cambio al pasar el mouse */
+}
+
+/* Centrado del formulario en la pantalla */
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alinea los elementos verticalmente en la parte superior */
-    gap: 20px; /* Espacio entre las dos columnas */
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo para la parte izquierda (texto y botón) */
-.left {
-    flex: 1;
-    max-width: 50%; /* Limita el ancho máximo de la sección */
-    text-align: left; /* Asegura que el texto se alinee a la izquierda */
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%; /* El formulario ocupará el 90% en pantallas pequeñas */
+    }
 }
 
-/* Estilo para la parte derecha (carrusel de fotos) */
-.right {
-    flex: 1;
-    max-width: 50%;
-    padding-left: 20px; /* Añade espacio entre el borde izquierdo y el contenido */
-}
-
-/* Estilo para la descripción */
-.description {
-    margin-top: 20px;
-     margin-bottom: 20px;
-    font-size: 1rem;
-}
-
-/* Asegura que los elementos dentro de la sección de texto estén alineados correctamente */
-h3 {
-
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    margin-top: 30px; /* Aumenta el espacio sobre el h3 */
-}
-
-/* Estilo para el carrusel de imágenes */
-.carousel {
-    width: 100%;
-    height: auto;
-    /* Aquí puedes agregar más estilo según el carrusel que estés usando */
-}
-
-.center-text {
-    text-align: center; /* Solo los textos con esta clase serán centrados */
-}
-.center-text h5 {
-    font-size: 1.8rem; /* Ajusta el tamaño del h5 para que sea más pequeño */
-    margin-bottom: 10px;
-    text-align: center; /* Asegura que el texto esté centrado */
-}
-/*caja de contacto*/
-}
-        .contact-form {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 90%;
-        }
-        .contact-form h1 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #333;
-        }
-        .contact-form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: whitesmoke;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .contact-form textarea {
-            resize: none;
-            height: 100px;
-        }
-        .contact-form button {
-            background-color: #333;
-            color: whitesmoke;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .contact-form button:hover {
-            background-color: primary;
-        }
 
 .social-links {
     text-align: center;
@@ -404,18 +296,18 @@ h3 {
 }
 
 .social-links a:hover {
-    color: rgba(158, 158, 158); /* Color del texto al hacer hover */
+    color: rgba(158, 158, 158);
 }
 
 .social-links i {
     margin-right: 8px;
-}
 
+/* Sección sobre mí */
 #about {
     display: flex;
     justify-content: space-between;
     padding: 50px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .about-container {
@@ -429,25 +321,61 @@ h3 {
 .about-text {
     width: 50%;
     padding-right: 20px;
+    text-align: left;
 }
 
-.about-text h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: book;
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
+/* Estilos para pantallas grandes */
 .about-image {
-    width: 40%;
+    width: 40%;  /* En pantallas grandes, la imagen ocupará el 40% del contenedor */
+    margin-top: 20px;
 }
 
 .about-image img {
-    width: 100%;
+    width: 100%;  /* La imagen ocupará el 100% de su contenedor */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+@media (max-width: 768px) {
+    /* En pantallas pequeñas */
+    #about {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 2s ease-in-out forwards;
 }
